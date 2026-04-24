@@ -5,18 +5,14 @@ from datetime import datetime
 # ==========================================
 # ROLE 1: LEAD DATA ARCHITECT
 # ==========================================
-# Your task is to define the Unified Schema for all sources.
-# This is v1. Note: A breaking change is coming at 11:00 AM!
+# v1 Schema — Unified contract for all data sources.
 
 class UnifiedDocument(BaseModel):
-    # TODO: Define the v1 schema. 
-    # Suggested fields: document_id, content, source_type, author, timestamp, metadata
-    
-    document_id: str
-    content: str
-    source_type: str # e.g., 'PDF', 'Video', 'HTML', 'CSV', 'Code'
+    document_id: str                          # Unique ID, e.g. "csv-1", "html-SP001"
+    content: str                              # Main text content
+    source_type: str                          # 'PDF', 'Video', 'HTML', 'CSV', 'Code'
     author: Optional[str] = "Unknown"
     timestamp: Optional[datetime] = None
-    
-    # You might want a dict for source-specific metadata
+
+    # Flexible bag for source-specific extras
     source_metadata: dict = Field(default_factory=dict)
