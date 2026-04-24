@@ -1,11 +1,3 @@
-Tên: Trần Quang Long
-
-MSSV: 2A202600304
-
-Email: quanglong2100@gmail.com
-
-Github username: quanglong2100
-
 Update: I just realized someone hijacked my lab and vibed all of it wtf??? Only realized when I compared it to original repo. \
 Update: LOL I even realized I can just make a new github account and go vandalize all other repos because the instructor's link automatically grants admin role. This is flawed as fuck.
 
