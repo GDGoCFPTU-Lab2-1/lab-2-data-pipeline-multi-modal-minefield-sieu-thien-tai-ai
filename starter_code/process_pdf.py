@@ -51,7 +51,7 @@ def extract_pdf_data(file_path):
     for attempt in range(max_retries):
         try:
             response = client.models.generate_content(
-                model="gemini-2.0-flash",
+                model="gemini-3.1-flash-lite-preview",
                 contents=[
                     types.Part.from_bytes(data=pdf_bytes, mime_type="application/pdf"),
                     prompt,
